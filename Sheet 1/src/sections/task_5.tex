@@ -1,0 +1,46 @@
+\section*{Aufgabe 5}
+
+Eine Logelei von Zweistein aus dem Zeit-Magazin lautet folgendermaßen:\\
+
+A: \textit{Wenn der Knull nicht gepramelt hat, dann haben entweder das Fipi oder die Gluka geurzt.}\\
+
+B: \textit{Wenn der Knull nicht geixt hat, dann hat, falls das Dapi nicht gelüllt hat, die Gluka gepramelt.}\\
+
+C: \textit{Wenn der Akru nicht geurzt hat, dann hat das Fipi entweder gepramelt oder gewatzelt.}\\
+
+D: \textit{Wenn weder der Knull noch das Dapi geixt haben, dann hat die Gluka geurzt.}\\
+
+E: \textit{Wenn das Dapi nicht gewatzelt hat, dann hat, falls der Knull nicht geurzt hat, das Fipi gelüllt.}\\
+
+F: \textit{Jeder hat etwas getan, keine zwei taten dasselbe.}\\
+
+Wer hat was getan?\\
+
+Ihre Aufgaben sind nun:
+
+\begin{enumerate}[label={a)}, leftmargin=*]
+    \item Zerlegen Sie alle Aussagen in elementare Bestandteile (d.h. in atomare Aussagen, s.o.) und den aussagenlogischen Operatoren 'und' ($\land$), 'oder' ($\lor$), 'nicht' ($\neg$) und 'wenn \dots dann \dots ' ($\rightarrow$) analog zu Aufgabe 2.
+\end{enumerate}
+
+\begin{tabularx}{\textwidth}{XXX}
+A) & B) & C)\\
+A: "\textit{Knull pramelt}" & A: "\textit{Knull ixt}" & A: "\textit{Akru urzt}"\\
+B: "\textit{Fipi urzt}" & B: "\textit{Dapi lüllt}" & B: "\textit{Fipi pramelt}"\\
+C: "\textit{Gluka urzt}" & C: "\textit{Gluka pramelt}" & C: "\textit{Fipi watzelt}"\\
+$\neg$ A $\rightarrow$ B $\lor$ C & ($\neg$ A $\land$ $\neg$ B) $\rightarrow$ C & A $\rightarrow$ (B $\lor$ C)\\
+& &\\
+D) & E) &\\
+A: "\textit{Knull ixt}" & A: "\textit{Dapi watzelt}" &\\
+B: "\textit{Dapi ixt}" & B: "\textit{Knull urzt}" &\\
+C: "\textit{Gluka urzt}" & C: "\textit{Fipi lüllt}"& \\
+($\neg$ A $\land$ $\neg$ B) $\rightarrow$ C & ($\neg$ A $\land$ $\neg$ B) $\rightarrow$ C &
+\end{tabularx}
+
+\begin{enumerate}[b), leftmargin=*]
+    \item Formalisieren Sie insbesondere die letzte Aussage:\\'Jeder hat etwas getan, keine zwei taten dasselbe' mit diesen atomaren Aussagen und den aussagenlogischen Operatoren.
+\end{enumerate}
+
+\begin{enumerate}[c), leftmargin=*]
+	\item \textbf{Challenge:}\\~\\
+    	Versuchen Sie, die ursprüngliche Aufgabe: 'Wer hat was getan?' zu lösen.
+\end{enumerate}
