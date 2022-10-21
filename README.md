@@ -1,2 +1,2 @@
 # Algebra
-Algebra soluctions and exam preparations for university 
+Algebra solutions and exam preparations for university 
