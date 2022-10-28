@@ -6,19 +6,30 @@ Dabei ist es wichtig, eine Formulierung zu finden, die logisch genau den Gehalt 
 
 a) Köln und Düsseldorf liegen am Rhein.\\
 
-\textit{Weder Köln noch Düsseldorf liegen am Rhein.}\\
+\textit{Köln liegt nicht am Rhein oder Düsseldorg liegt nicht am Rhein.}\\
 
 b) Eine der Städte Frankfurt, Köln, Dresden und Berlin liegt an der Elbe.\\
 
-\textit{Bis auf eine der Städte Frankfurt, Köln, Dresden und Berlin liegen alle an der Elbe.}\\
+\textit{Frankfurt liegt nicht an der Elbe, Köln liegt nicht an der Elbe, Dresden liegt nicht an der Elbe, Berlin liegt nicht an der Elbe.}\\
 
 c) Wenn es regnet, werden die Straßen nass und der Himmel verdunkelt sich.\\
 
-\textit{Regnet es nicht, werden die Straße nicht nass und der Himmel verdunkelt sich nicht.}\\
+\textit{Wenn es regnet dann werden die Straßen nicht nass und der Himmel verdunkelt sich nicht.}\\
+
+A: "\textit{es regnet}"\\
+
+\textit{Ursprüngliche Aussage:}\\
+$A \Rightarrow (B \land C) \Leftrightarrow$\\
+$\lnot A \lor (B \land C)$\\
+
+\textit{Negation der Aussage:}\\
+$\lnot(\lnot A \lor (B \land C) \Leftrightarrow$\\
+$\lnot \lnot A \land \lnot (B \land C) \Leftrightarrow$\\
+$A \land (\lnot B \lor \lnot C)$ \textit{(Daraus Satz bauen ist schwierig, logisch aber richtig)}\\
 
 d) Ist $p$ eine Primzahl und teilt $p$ das Produkt $xy$ der zwei Zahlen $x$ und $y$, so teilt $p$ auch einen der beiden Faktoren $x$ oder $y$.\\
 
-\textit{Ist $p$ keine Primzahl und teilt $p$ auch das Produkt $xy$ der zwei Zahlen $x$ und $y$ nicht, so teilt $p$ auch nicht einen der beiden Faktoren $x$ oder $y$.}\\
+\textit{Wenn $p$ eine Primzahl ist und $p$ das Produkt aus $xy$ teilt, dann teilt $p$ nicht einen der beiden Faktoren $x$ oder $y$}\\
 
 e) Hans und Franz sind verwandt.\\
 
@@ -26,13 +37,18 @@ e) Hans und Franz sind verwandt.\\
 
 f) Hans und Franz sind rothaarig.\\
 
-\textit{Weder Hans noch Franz sind rothaarig.}\\
+\textit{Hans ist nicht rothaarig oder Franz ist nicht rothaarig.}\\
 
 g) Jede Stadt, die an einem Fluss liegt, liegt entweder am Rhein oder an der Donau.\\
 
-\textit{Liegt eine Stadt nicht an einem Fluss, so liegt sie nicht am Rhein oder an der Donau.}\\
+\textit{Jede Stadt die an einer Stadt liegt, liegt nicht am Rhein oder nicht an der Donau}\\
 
 h) Ist $G$ eine abelsche Gruppe, so ist $G$ eine zyklische Gruppe oder ein Produkt von zyklischen Gruppen.\\
 
-\textit{Ist $G$ abelsche Gruppe, so ist $G$ keine zyklishe Gruppe oder ein Produkt von zyklischen Gruppen.}
+\textit{Ist $G$ eine abelsche Gruppe, so ist $G$ nicht eine zyklishe Gruppe und nicht ein Produkt von zyklischen Gruppen.}\\
+
+$A \Rightarrow (B \lor C)$\\
+$\lnot (\lnot A \lor (B \lor C)$\\
+$A \land \lor (B \lor C)$\\
+$A \land (\land B \land \land C)$
 
