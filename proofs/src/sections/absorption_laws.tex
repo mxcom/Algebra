@@ -1,0 +1,24 @@
+\subsection{Absorptionsgesetz}
+
+Beweis durch Tautologie:
+
+\begin{align*}
+A &\Leftrightarrow A \land (A \lor B)\\
+  &\Leftrightarrow (A \lor 0) \land (A \lor B)\\
+  &\Leftrightarrow A \lor (0 \land B)\\
+  &\Leftrightarrow A \lor 0 &\\
+  &\Leftrightarrow A  
+\end{align*}\
+
+Beweis durch Wahrheitstafel:\\
+
+\begin{tabular}{c|c|c|c}
+$A$ & $B$ & $A \lor B$ & $A \land (A \lor B)$\\
+\hline
+0 & 0 & 0 & 0\\
+0 & 1 & 1 & 0\\
+1 & 0 & 1 & 1\\
+1 & 1 & 1 & 1\\
+\end{tabular}\
+\\~\\
+Da $A$ und $A \land (A \lor B)$ die gleichen Wahrheitswerte besitzen ist es äquivalent.
