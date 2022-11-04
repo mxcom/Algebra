@@ -22,18 +22,17 @@ Ihre Aufgaben sind nun:
     \item Zerlegen Sie alle Aussagen in elementare Bestandteile (d.h. in atomare Aussagen, s.o.) und den aussagenlogischen Operatoren 'und' ($\land$), 'oder' ($\lor$), 'nicht' ($\neg$) und 'wenn \dots dann \dots ' ($\rightarrow$) analog zu Aufgabe 2.
 \end{enumerate}
 
+\begin{itemize}[leftmargin=*]
+\item $\text{Personen} = \{ K, F, G, D, A\}$
+\item $\text{Aktivitäten} = \{p, u, i, l , w\}$
+\end{itemize}\
+
 \begin{tabularx}{\textwidth}{XXX}
-A) & B) & C)\\
-A: "\textit{Knull pramelt}" & A: "\textit{Knull ixt}" & A: "\textit{Akru urzt}"\\
-B: "\textit{Fipi urzt}" & B: "\textit{Dapi lüllt}" & B: "\textit{Fipi pramelt}"\\
-C: "\textit{Gluka urzt}" & C: "\textit{Gluka pramelt}" & C: "\textit{Fipi watzelt}"\\
-$\neg$ A $\Rightarrow$ B $\lor$ C & ($\neg$ A $\land$ $\neg$ B) $\Rightarrow$ C & A $\rightarrow$ (B $\lor$ C)\\
+A: & B: & CC\\
+$\neg K(p) \Rightarrow F(u) \veebar G(u)$ & $(\neg K(i) \land \neg D(l)) \Rightarrow G(p)$ & $\lnot A(u) \Rightarrow (F(p) \lor F(w))$\\
 & &\\
-D) & E) &\\
-A: "\textit{Knull ixt}" & A: "\textit{Dapi watzelt}" &\\
-B: "\textit{Dapi ixt}" & B: "\textit{Knull urzt}" &\\
-C: "\textit{Gluka urzt}" & C: "\textit{Fipi lüllt}"& \\
-($\neg$ A $\land$ $\neg$ B) $\Rightarrow$ C & ($\neg$ A $\land$ $\neg$ B) $\Rightarrow$ C &
+D: & E: &\\
+$(\neg K(i) \land \neg D(i)) \Rightarrow G(u)$ & $(\neg D(w) \land \neg K(u)) \Rightarrow F(l)$ &
 \end{tabularx}
 
 \begin{enumerate}[b), leftmargin=*]

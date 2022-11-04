@@ -8,9 +8,13 @@ $Q(n)$ & : & $n$ ist eine Primzahl\\
 $R(n)$ & : & $n$ ist Summe zweier Primzahlen\\
 $S(n)$ & : & es gibt eine natürliche Zahl $k > 1$ mit $n = 2k - 1$\\
 $T(n)$ & : & $n$ ist größer als $2$\\~\\
-\end{tabular}
+\end{tabular}\
 
-Formulieren Sie die folgenden prädikatenlogischen Formeln umgangssprachlich aus:\\
+Formulieren Sie die folgenden prädikatenlogischen Formeln umgangssprachlich aus:
+
+\begin{itemize}[leftmargin=*]
+\item $S(n)$ kann man vereinfachen als 'es gibt eine ungerade Zahl $\geq 3$' vereinfachen
+\end{itemize}
 
 a) $\forall n ((Q(n) \land T(n)) \Rightarrow (\lnot P(n)))$\\
 
@@ -22,12 +26,12 @@ b) $\forall n ((T(n) \land P(n)) \Rightarrow (R(n)))$\\
 
 c) $\exists n (S(n) \land \lnot R(n) \Rightarrow \lnot Q(n))$\\
 
-\textit{Es existiert mindestens ein n was wenn es eine natürliche Zahl k > 1 mit n = 2k - 1 gibt und n nicht die Summe zweier Primzahlen ist, n keine Primzahl ist.}\\
+\textit{Es existiert mindestens ein n was wenn es ungerade Zahl $\geq 3$ gibt und n nicht die Summe zweier Primzahlen ist, n keine Primzahl ist.}\\
 
 d) $\lnot \forall n (S(n) \Rightarrow Q(n))$\\
 
-\textit{Es existiert kein n was, wenn es eine natürliche Zahl k > 1 mit n = 2k - 1 gibt, eine Primzahl ist.}\\
+\textit{Es existiert kein n was, wenn es eine ungerade Zahl $\geq 3$ gibt, eine Primzahl ist.}\\
 
 e) $\exists n (R(n) \land Q(n))$\\
 
-\textit{Es existiert mindestens ein n, was die Summe zweier Primzahlen ist und selber eine Primzahl ist.}
+\textit{Es existiert mindestens ein n, welche die Summe zweier Primzahlen ist und selber eine Primzahl ist.}
