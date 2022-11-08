@@ -2,9 +2,49 @@
 
 Welche der folgenden aussagenlogischen Formeln sind Tautologien, welche sind erfüllbar?\\
 
+\begin{itemize}[leftmargin=*]
+\item \textit{Anmerkung:} $X \Rightarrow Y$ \textit{wurde hier als} $\lnot X \lor Y$ \textit{geschrieben}
+\end{itemize}
+
 a) $(A \Rightarrow (B \Rightarrow C)) \Leftrightarrow ((A \land B) \Rightarrow C)$\\
 
-b) $((A \Rightarrow B) \Rightarrow C) \Leftrightarrow ((A \lor C) \land (\lnot B \lor C))$\\
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
+$A$ & $B$ & $C$ & $\lnot A$ & $\lnot B$ & $\overbrace{\lnot B \lor C}^{D}$ & $\overbrace{\lnot A \lor D}^{E}$ & $\overbrace{A \land B}^{F}$ & $\lnot F$ & $\overbrace{\lnot F \lor C}^{G}$ & $E \Leftrightarrow G$\\
+\hline
+1 & 1 & 1 & 0 & 0 & 1 & 1 & 1 & 0 & 1 & 1\\
+1 & 0 & 1 & 0 & 1 & 1 & 1 & 0 & 1 & 1 & 1\\
+0 & 1 & 1 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & 1\\
+0 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 1 & 1 & 1 & 0 & 1 & 1 & 1\\
+0 & 1 & 0 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 1\\
+0 & 0 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1
+\end{tabular}
+\end{table}\
+
+b) $((A \Rightarrow B) \Rightarrow C) \Leftrightarrow ((A \lor C) \land (\lnot B \lor C))$
+
+\hspace{3.57cm}$\Leftrightarrow (C \lor (\lnot B \land A))$
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c}
+$A$ & $B$ & $C$ & $\lnot A$ & $\lnot B$ & $\overbrace{\lnot A \lor B}^{D}$ & $\lnot D$ & $\overbrace{\lnot D \lor C}^{E}$ & $\overbrace{\lnot B \land A}^{F}$ & $\overbrace{C \lor F}^{G}$ & $E \Leftrightarrow G$\\
+\hline
+1 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 1\\
+1 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & 1 & 1\\
+0 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 1\\
+0 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 0 & 1 & 1\\
+1 & 1 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & 0 & 0\\
+1 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0\\
+0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 0 & 0\\
+0 & 0 & 0 & 1 & 1 & 1 & 0 & 1 & 0 & 0 & 0\\
+\end{tabular}
+\end{table}\
+
 
 c) $((A \Rightarrow B) \Rightarrow C) \Rightarrow (A \Rightarrow (B \land C))$\\
 
