@@ -1,8 +1,9 @@
 \section*{Aufgabe 3}
 
-a) Zeigen Sie, daß die folgende aussagenlogische Formel eine Tautologie ist:
-
+\begin{enumerate}[label={a)}, leftmargin=*]
+\item Zeigen Sie, daß die folgende aussagenlogische Formel eine Tautologie ist:\\
 $(A \lor B) \Rightarrow (\lnot B \Rightarrow A)$
+\end{enumerate}
 
 \begin{table}[h]
 \centering
@@ -14,6 +15,30 @@ $A$ & $B$ & $\overbrace{A \lor B}^{C}$ & $\overbrace{B \lor A}^{D}$ & $\lnot C$ 
 0 & 1 & 1 & 1 & 0 & 1\\
 0 & 0 & 0 & 0 & 1 & 1\\
 \end{tabular}
-\end{table}\
+\end{table}
 
 \textit{Tautologie}
+
+\begin{enumerate}[label={b)}, leftmargin=*]
+\item Formulieren Sie die Aussage, die aus der obigen Formel entsteht, wenn die aussagenlogischen Variablen A und B ersetzt werden durch die elementaren Aussagen:\\
+    ``Fipi lüllt'' bzw. ``Gluka urzt''.\\
+    Überzeugen Sie sich, dass diese Aussage auch im intuitiven Sinne wahr ist.
+\end{enumerate}
+
+\textit{``Wenn Fipi lüllt oder Gluka urzt dann hat, wenn Gluka nicht geurzt hat, Fippi gelüllt.''}
+
+\begin{enumerate}[label={c)}, leftmargin=*]
+\item Ersetzen Sie nun die Variablen A und B durch die (nicht mehr aussagenlogisch elementaren)
+Aussagen:\\
+``Knull ixt oder Gluka pramelt'' bzw. ``Falls Akru urzt, so watzelt das Dapi''.
+\end{enumerate}
+
+\textit{``Wenn Knull ixt oder Gluka pramelt oder wenn Akru urzt dann watzelt Dapi, dann wenn Akru urzt, und Dapi nicht watzelt, dann ixt Knull oder Gluka pramelt.''}
+
+\begin{align*}
+(\overbrace{(K(i) \lor G(p))}^{A} \lor \overbrace{(A(u) \Rightarrow D(w))}^{B}) &\Rightarrow (\overbrace{\lnot (A(u) \Rightarrow D(w))}^{\lnot B} \Rightarrow \overbrace{(K(i) \lor G(p))}^{A}) \\
+&\Leftrightarrow \\
+(\overbrace{(K(i) \lor G(p))}^{A} \lor \overbrace{(A(u) \Rightarrow D(w))}^{B}) &\Rightarrow (\overbrace{(A(u) \land \lnot D(w))}^{\lnot B} \Rightarrow \overbrace{(K(i) \lor G(p))}^{A})
+\end{align*}
+
+Versuchen Sie, die Wahrheit auch dieser (sprachlich sicherlich unübersichtlichen) Aussage sich intuitiv klar zu machen.
