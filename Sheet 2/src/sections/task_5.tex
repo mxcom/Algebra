@@ -9,3 +9,55 @@ $\forall \epsilon > 0 \ \exists \delta > 0 \ \forall  x : ((| x - x_0 | < \delta
 \end{enumerate}
 
 \textit{``Für alle Epsilon größer 0, existiert ein delta größer 0, sodass für alle x gilt, dass falls der Betrag von $x$ minus $x_0$ größer Delta ist, Der Betrag von f von x minus f von $x_0$ kleiner Epsilon ist.''}
+
+\begin{enumerate}[label={b)}, leftmargin=*]
+\item Bilden Sie formal die Negation dieser Aussage und schreiben Sie diese so, dass
+\begin{itemize}
+\item kein Negationszeichen vor Quantoren steht und
+\item kein Negationszeichen vor einer Implikation steht.
+\end{itemize}
+\end{enumerate}
+
+\begin{enumerate}[leftmargin=*]
+\item \textit{Durch die Negation der Quantoren, negiert sich auch die Aussage (drei mal)}
+\end{enumerate}
+
+\begin{center}
+$\exists \epsilon > 0, \ \forall \delta > 0, \ \exists x : \lnot \lnot \lnot((| x - x_0 | < \delta) \Rightarrow (| f(x) - f(x_0)| < \epsilon))$
+\end{center}
+
+\begin{enumerate}[label={2.}, leftmargin=*]
+\item \textit{Zwei Negationen können entfernt werden, da es sich um eine Doppeltenegation handelt}
+\end{enumerate}
+
+\begin{center}
+$\exists \epsilon > 0, \ \forall \delta > 0, \ \exists x : \lnot ((| x - x_0 | < \delta) \Rightarrow (| f(x) - f(x_0)| < \epsilon))$
+\end{center}
+
+\begin{enumerate}[label={3.}, leftmargin=*]
+\item \textit{Da laut Aufgaben stellung vor einer Implikation keine Negation stehen soll wird die Implikation umgewandelt ($A \Rightarrow B \Leftrightarrow \lnot A \lor B$)}
+\end{enumerate}
+
+\begin{center}
+$\exists \epsilon > 0, \ \forall \delta > 0, \ \exists x : \lnot (\lnot (|x - x_0| < \delta) \lor (|f(x) - f(x_0)| < \epsilon)$
+\end{center}
+
+\begin{enumerate}[label={4.}, leftmargin=*]
+\item \textit{Die Negation vor der Klammer kann entfernt werden indem man es in die Klammer holt und den aussagenlogischen Operator umdreht ($\lnot(A \lor B) \Leftrightarrow \lnot A \land \lnot B$)}
+\end{enumerate}
+
+\begin{center}
+$\exists \epsilon > 0, \ \forall \delta > 0, \ \exists x : ((|x - x_0| < \delta) \land \lnot (|f(x) - f(x_0)| < \epsilon)$
+\end{center}
+
+\begin{enumerate}[label={4.}, leftmargin=*]
+\item \textit{Die Negation vor $|f(x) - f(x_0)| < \epsilon$ kann entfernt indem man das $<$ zu einem $\geq$ macht (ist etwas nicht kleiner als was anderes, impliziert es das es größer oder gleich ist)}
+\end{enumerate}
+
+\begin{center}
+$\exists \epsilon > 0, \ \forall \delta > 0, \ \exists x : ((|x - x_0| < \delta) \land (|f(x) - f(x_0)| \geq \epsilon)$
+\end{center}
+
+\begin{enumerate}[label={c)}, leftmargin=*]
+\item Versuchen Sie sowohl die gegebene Aussage, als auch die negierte Aussage verbal zu formulieren.
+\end{enumerate}
