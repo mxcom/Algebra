@@ -6,18 +6,92 @@ Welche der folgenden prädikatenlogischen Formeln (über einem nicht leeren Gül
 \item $(\forall x : F(x)) \Rightarrow (\lnot \forall x : \lnot F(x))$
 \end{enumerate}
 
+\textit{Richtig, da $\lnot \forall x : \lnot F(x)$ sich als $\exists x : F(x)$ schreiben lässt, und $\forall x : F(x))$, $\exists x : F(x)$ impliziert.}
+
 \begin{enumerate}[label={b)}, leftmargin=*]
 \item $(\forall x : F(x) \land G(x)) \Rightarrow (\forall x : G(x))$
 \end{enumerate}
+
+\textit{Richtig. Erklärung durch Venn-Diagram: Sei F(x), dass ein Element in F enthalten ist und G(x), dass ein Element in G enthalten ist, dann bedeutet $\forall x: F(x) \land G(x)$ dass gilt, dass alle Elemente gemeint sind, die sowohl in F als auch in G sind (gelbe Schnittmenge in der Abbildung). Aus der Grundannahme kann man also folgen, dass alle, in der Grundannahme, gemeinten Elemente auch immer Teil von G seien müssen.}
+
+\begin{center}
+\begin{tikzpicture}[thick,
+    set/.style = {circle,
+        minimum size = 3cm}]
+ 
+% Set F
+\node[set,label={135:$F$}] (F) at (0,0) {};
+ 
+% Set G
+\node[set,label={45:$G$}] (G) at (1.8,0) {};
+ 
+% Intersection
+\begin{scope}
+    \clip (0,0) circle(1.5cm);
+    \clip (1.8,0) circle(1.5cm);
+    \fill[Dandelion](0,0) circle(1.5cm);
+\end{scope}
+ 
+% Circles outline
+\draw (0,0) circle(1.5cm);
+\draw (1.8,0) circle(1.5cm);
+ 
+\end{tikzpicture}
+\end{center}
 
 \begin{enumerate}[label={c)}, leftmargin=*]
 \item $(\forall x : F(x) \lor G(x)) \Rightarrow (\forall x : F(x))$
 \end{enumerate}
 
+\textit{Falsch. Erklärung durch Venn-Diagram: Sei F(x), dass ein Element in F enthalten ist und G(x), dass ein Element in G enthalten ist, dann bedeutet $\forall x : F(x) \lor G(x)$, dass gilt, dass alle Elemente in entweder F, G oder in beiden enthalten sind. Aus der Grundannahme kann nicht gefolgert werden, das für alle Element gilt, dass diese in F enthalten sind, da es auch Elemente geben kann welche ausschließlich in G enthalten sind.}
+
+\begin{center}
+\begin{tikzpicture}[thick,
+    set/.style = {circle,
+        minimum size = 3cm,
+        fill=Dandelion}]
+ 
+% Set F
+\node[set,label={135:$F$}] (F) at (0,0) {};
+ 
+% Set G
+\node[set,label={45:$G$}] (G) at (1.8,0) {};
+ 
+% Circles outline
+\draw (0,0) circle(1.5cm);
+\draw (1.8,0) circle(1.5cm);
+ 
+\end{tikzpicture}
+\end{center}
+
 \begin{enumerate}[label={d)}, leftmargin=*]
 \item $(\forall x : F(x) \lor G(x)) \Rightarrow (\exists x : G(x))$
 \end{enumerate}
 
+\textit{Falsch. Beispiel: Sei F(x) $x^2 \geq 0$ und G(x) sei $x < 0$ für $x \in \mathbb{R}$, so gilt zwar $\forall x : F(x) \lor G(x)$ aber nicht $\exists x : G(x)$.}
+
+\newpage
+
 \begin{enumerate}[label={e)}, leftmargin=*]
 \item $(\forall x : F(x) \Rightarrow G(x)) \Rightarrow (\exists x : F(x) \land G(x))$
 \end{enumerate}
+
+\textit{Falsch. Erklärung durch Venn-Diagram: Sei F(x), dass ein Element in F enthalten ist und G(x), dass ein Element in G enthalten ist, dann bedeutet $\forall x : F(x) \Rightarrow G(x)$, dass gilt, dass alle Elemente die in F enthalten sind auch in G enthalten sind. Daraus folgt allerdings nicht, dass es mindestens ein Element gibt welches in F und G enthalten ist, da, da es auch ein Element geben kann welche nur in G enthalten ist aber nicht in F.}
+
+\begin{center}
+\begin{tikzpicture}[thick,
+    set/.style = {circle,
+        minimum size = 3cm}]
+ 
+% Set G
+\node[set,label={45:$G$}, fill=Dandelion] (G) at (0,0) {};
+ 
+% Circles outline
+\draw (0,0) circle(1.5cm);
+\draw (0.5,0) circle(0.7cm);
+
+% Set F
+\node[set,label={135:$F$}] (F) at (1.9,-1.4) {};
+
+\end{tikzpicture}
+\end{center}
