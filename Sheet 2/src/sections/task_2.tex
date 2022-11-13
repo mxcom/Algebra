@@ -8,6 +8,8 @@ Welche der folgenden aussagenlogischen Formeln sind Tautologien, welche sind erf
 
 a) $(A \Rightarrow (B \Rightarrow C)) \Leftrightarrow ((A \land B) \Rightarrow C)$\\
 
+\textit{Lösung durch Wahrheitstafel:}
+
 \begin{table}[h]
 \centering
 \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
@@ -22,13 +24,25 @@ $A$ & $B$ & $C$ & $\lnot A$ & $\lnot B$ & $\overbrace{\lnot B \lor C}^{D}$ & $\o
 0 & 1 & 0 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 1\\
 0 & 0 & 0 & 1 & 1 & 1 & 1 & 0 & 1 & 1 & 1
 \end{tabular}
-\end{table}
+\end{table}\
 
-\textit{Tautologie}\\
+\textit{Lösung durch Umschreiben:}
+
+\begin{align*}
+(A \Rightarrow (B \Rightarrow C)) &\Leftrightarrow ((A \land B) \Rightarrow C)\\
+(\lnot A \lor (\lnot B \lor C)) &\Leftrightarrow (\lnot (A \land B) \lor C)\\
+(\lnot A \lor \lnot B \lor C) &\Leftrightarrow \lnot A \lor \lnot B \lor C
+\end{align*}\
+
+\textit{Tautologie, erfüllbar}\\
+
+\newpage
 
 b) $((A \Rightarrow B) \Rightarrow C) \Leftrightarrow ((A \lor C) \land (\lnot B \lor C))$
 
-\hspace{3.57cm}$\Leftrightarrow (C \lor (\lnot B \land A))$
+\hspace{3.57cm}$\Leftrightarrow (C \lor (\lnot B \land A))$\\
+
+\textit{Lösung durch Wahrheitstafel:}
 
 \begin{table}[h]
 \centering
@@ -44,9 +58,19 @@ $A$ & $B$ & $C$ & $\lnot A$ & $\lnot B$ & $\overbrace{\lnot A \lor B}^{D}$ & $\l
 0 & 1 & 0 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 1\\
 0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 1\\
 \end{tabular}
-\end{table}
+\end{table}\
 
-\textit{Tautologie}\\
+\textit{Lösung durch Umschreiben:}
+
+\begin{align*}
+((A \Rightarrow B) \Rightarrow C) &\Leftrightarrow ((A \lor C) \land (\lnot B \lor C))\\
+(\lnot (\lnot A \lor B) \lor C) &\Leftrightarrow (C \lor (A \land \lnot B))\\
+((\lnot \lnot A \land \lnot B) \lor C) &\Leftrightarrow (C \lor (A \land \lnot B))\\
+((A \land \lnot B) \lor C) &\Leftrightarrow (C \lor (A \land \lnot B))\\
+(C \lor (A \land \lnot B)) &\Leftrightarrow (C \lor (A \land \lnot B))
+\end{align*}
+
+\textit{Tautologie, erfüllbar}\\
 
 \newpage
 
