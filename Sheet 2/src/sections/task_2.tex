@@ -34,7 +34,7 @@ $A$ & $B$ & $C$ & $\lnot A$ & $\lnot B$ & $\overbrace{\lnot B \lor C}^{D}$ & $\o
 (\lnot A \lor \lnot B \lor C) &\Leftrightarrow \lnot A \lor \lnot B \lor C
 \end{align*}\
 
-\textit{Tautologie, erfüllbar}\\
+\textit{Ist eine Tautologie, ist erfüllbar}\\
 
 \newpage
 
@@ -70,7 +70,7 @@ $A$ & $B$ & $C$ & $\lnot A$ & $\lnot B$ & $\overbrace{\lnot A \lor B}^{D}$ & $\l
 (C \lor (A \land \lnot B)) &\Leftrightarrow (C \lor (A \land \lnot B))
 \end{align*}
 
-\textit{Tautologie, erfüllbar}\\
+\textit{Ist eine Tautologie, ist erfüllbar}\\
 
 \newpage
 
@@ -113,9 +113,13 @@ $A$ & $B$ & $C$ & $\lnot A$ & $\lnot B$ & $\overbrace{A \land \lnot B}^{D}$ & $\
 \end{tabular}
 \end{table}
 
-\textit{Keine Tautologie}\\
+\textit{Ist keine Tautologie}\\
+
+\newpage
 
 e) $(\lnot B \land A) \Leftrightarrow \lnot (A \Rightarrow B)$\\
+
+\textit{Lösung durch Wahrheitstafel:}
 
 \begin{table}[h]
 \centering
@@ -127,6 +131,17 @@ $A$ & $B$ & $\lnot A$ & $\lnot B$ & $\overbrace{\lnot B \land A}^{C}$ & $\overbr
 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1\\
 0 & 0 & 1 & 1 & 0 & 1 & 0 & 1\\
 \end{tabular}
-\end{table}
+\end{table}\
 
-\textit{Tautologie}
+\textit{Lösung durch Umschreiben:}
+
+\begin{align*}
+(\lnot B \land A) &\Leftrightarrow \lnot (A \Rightarrow B)\\
+(\lnot B \land A) &\Leftrightarrow \lnot (\lnot A \lor B)\\
+(\lnot B \land A) &\Leftrightarrow (\lnot \lnot A \land \lnot B)\\
+(\lnot B \land A) &\Leftrightarrow (A \land \lnot B)\\
+(\lnot B \land A) &\Leftrightarrow (\lnot B \land A) 
+\end{align*}
+
+
+\textit{Ist eine Tautologie, ist erfüllbar}
