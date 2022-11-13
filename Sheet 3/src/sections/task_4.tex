@@ -1,0 +1,20 @@
+\section*{Aufgabe 4}
+
+Es seien $M$, $N$, $K$ beliebige Mengen. Beweisen Sie folgende Aussagen:\\
+
+a) $(N \ \backslash \ M) \ \backslash \ K = N \ \backslash \ (M \cup K)$\\
+
+\begin{align*}
+(N \ \backslash \ M) \ \backslash \ K &= N \ \backslash \ (M \cup K)\\
+x \in ((N \land \lnot M) \land \lnot K) &\Leftrightarrow x \in (N \land \lnot (M \lor K))\\
+(x \in N \land \lnot (x \in M)) \land \lnot (x \in K) &\Leftrightarrow x \in N \land \lnot (x \in M \lor x \in K))\\
+x \in N \land (\lnot (x \in M) \land \lnot (x \in K)) &\Leftrightarrow x \in N \land \lnot (x \in M \lor x \in K))\\
+x \in N \land \lnot (x \in M \lor x \in K)) &\Leftrightarrow x \in N \land \lnot (x \in M \lor x \in K))\\
+x \in (N \land \lnot (M \lor K)) &\Leftrightarrow x \in (N \land \lnot (M \lor K))\\
+N \ \backslash \ (M \cup K) &= N \ \backslash \ (M \cup K)
+\end{align*}
+\begin{FlushRight}
+$\Box$
+\end{FlushRight}
+
+b) $N \ \backslash \ (N \ \backslash \ M) = M \Leftrightarrow M \subseteq N$\\
