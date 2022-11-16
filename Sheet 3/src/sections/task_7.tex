@@ -1,0 +1,43 @@
+\section*{Aufgabe 7}
+
+Es seien $A, B, C, D$ Mengen. Man zeige:\\
+
+a) $(A \cap B) \times (C \cap D) = (A \times C) \cap (B \times D)$\\
+
+Das Kartesische Produkt ist definiert als: $A \times B := \{(a,b) \ | \ a \in A, b \in B\}$
+
+\begin{align*}
+(A \cap B) \times (C \cap D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
+x \in (A \cap B) \times y \in (C \cap D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
+(x \in A \cap x \in B) \times (y \in C \cap y \in D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
+(x \in A \cap x \in B) \land (y \in C \cap y \in D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
+(x \in A \land x \in B) \land (y \in C \land y \in D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
+x \in A \land x \in B \land y \in C \land y \in D &\Leftrightarrow (A \times C) \cap (B \times D)\\
+x \in A \land y \in C \land x \in B \land y \in D &\Leftrightarrow (A \times C) \cap (B \times D)\\
+x \in A \land y \in C \land x \in B \land y \in D &\Leftrightarrow (A \times C) \cap (B \times D)\\
+(x \in A \land y \in C) \land (x \in B \land y \in D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
+x,y \in (A \land C) \land x,y \in (B \land D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
+x,y \in (A \times C) \land x,y \in (B \times D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
+x,y \in (A \times C) \cap x,y \in (B \times D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
+(A \times C) \cap (B \times D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
+\end{align*}
+
+b) $(A \times C) \cup (B \times D) \subseteq (A \cup B) \times (C \cup D)$\\
+
+Man nimmt ein beliebiges Tupel $(x,y) \in (A \times C) \cup (B \times D)$. Das bedeutet $(x,y) \in (A \times C)$ oder $(x,y) \in (B \times D)$. Das ist gleichbedeutend mit ($x \in A$ und $y \in C$) oder ($x \in B$ und $y \in D$).
+
+\begin{enumerate}[leftmargin=2em]
+\item[(I)] Ist $x \in A$ und $y \in C$, dann folgt daraus $x \in A \subseteq A \cup B$ und $y \in C \subseteq C \cup D$.\\
+Somit ist $(x,y) \in (A \cup B) \times (C \cup D)$
+\item[(II)] Ist $x \in B$ und $y \in D$, dann folgt daraus $x \in B \subseteq A \cup C$ und $y \in D \subseteq C \cup D$.\\
+Somit ist $(x,y) \in (A \cup B) \times (C \cup D)$
+\end{enumerate}
+
+Für jeden Fall gilt also $(x,y) \in (A \cup B) \times (C \cup D)$, somit stimmt $(A \times C) \cup (B \times D) \subseteq (A \cup B) \times (C \cup D)$.
+
+\newpage
+
+Zeigen Sie an einem Gegenbeispiel, dass in b) die Inklusion ``$\supseteq$'' i.A. nicht gilt.\\
+Anm.: $(B \nsubseteq A) \Leftrightarrow (A \subseteq B)$
+
+\newpage
