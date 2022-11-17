@@ -1,0 +1,20 @@
+\section*{Aufgabe 9}
+
+Untersuchen Sie, ob die folgenden Gleichungen für beliebige Mengen $M, N$ gelten:\\
+
+a) $\mathcal{P}(N) \cap \mathcal{P}(M) = \mathcal{P}(N \cap M)$\\
+
+Die Schnittmenge ist definiert als: $A \cap B := \{x \ | \ x \in A \land x \in B \}$\\
+
+Zu zeigen ist, (I) $x \in \mathcal{P}(N) \cap \mathcal{P}(M) \subseteq \mathcal{P}(N \cap M)$ und (II) $x \in \mathcal{P}(N \cap M) \subseteq \mathcal{P}(N) \cap \mathcal{P}(M)$
+
+\begin{enumerate}[leftmargin=2em]
+\item[(I)] $x \in \mathcal{P}(N) \cap \mathcal{P}(M) \subseteq \mathcal{P}(N \cap M)$\\
+Laut Schnittmengendefinition gilt $x \in P(N) \land x \in P(M)$.\\
+Somit ist $x \subseteq N \land x \subseteq M$, also $x \subseteq N \cap M$ und damit $x \in P(N \cap M)$.
+\item[(II)] $x \in \mathcal{P}(N \cap M) \subseteq \mathcal{P}(N) \cap \mathcal{P}(M)$\\
+Laut Potenzmengendefinition gilt $x \subseteq N \cap M$.\\
+Somit ist $x \subseteq N \land x \subseteq M$, also $x \in P(N) \land x \in P(M)$ und damit $x \in P(N) \cap P(M)$.
+\end{enumerate}
+
+b) $\mathcal{P}(N) \cup \mathcal{P}(M) = \mathcal{P}(N \cup M)$\\
