@@ -12,57 +12,30 @@ Welche der folgenden prädikatenlogischen Formeln (über einem nicht leeren Gül
 \item $(\forall x : F(x) \land G(x)) \Rightarrow (\forall x : G(x))$
 \end{enumerate}
 
-\textit{Richtig. Erklärung durch Venn-Diagram: Sei F(x), dass ein Element in F enthalten ist und G(x), dass ein Element in G enthalten ist, dann bedeutet $\forall x: F(x) \land G(x)$ dass gilt, dass alle Elemente gemeint sind, die sowohl in F als auch in G sind (gelbe Schnittmenge in der Abbildung). Aus der Grundannahme kann man also folgen, dass alle, in der Grundannahme, gemeinten Elemente auch immer Teil von G seien müssen.}
+\textit{Richtig.}\\
 
-\begin{center}
-\begin{tikzpicture}[thick,
-    set/.style = {circle,
-        minimum size = 3cm}]
- 
-% Set F
-\node[set,label={135:$F$}] (F) at (0,0) {};
- 
-% Set G
-\node[set,label={45:$G$}] (G) at (1.8,0) {};
- 
-% Intersection
-\begin{scope}
-    \clip (0,0) circle(1.5cm);
-    \clip (1.8,0) circle(1.5cm);
-    \fill[Dandelion](0,0) circle(1.5cm);
-\end{scope}
- 
-% Circles outline
-\draw (0,0) circle(1.5cm);
-\draw (1.8,0) circle(1.5cm);
- 
-\end{tikzpicture}
-\end{center}
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|c|c}
+$F(x)$ & $G(x)$ & $\overbrace{F(x) \land G(x)}^{H}$ & $H \Rightarrow G(x)$\\
+0 & 0 & 0 & 1\\
+1 & 1 & 1 & 1
+\end{tabular}
+\end{table}\
 
 \begin{enumerate}[label={c)}, leftmargin=*]
 \item $(\forall x : F(x) \lor G(x)) \Rightarrow (\forall x : F(x))$
 \end{enumerate}
 
-\textit{Falsch. Erklärung durch Venn-Diagram: Sei F(x), dass ein Element in F enthalten ist und G(x), dass ein Element in G enthalten ist, dann bedeutet $\forall x : F(x) \lor G(x)$, dass gilt, dass alle Elemente in entweder F, G oder in beiden enthalten sind. Aus der Grundannahme kann nicht gefolgert werden, das für alle Element gilt, dass diese in F enthalten sind, da es auch Elemente geben kann welche ausschließlich in G enthalten sind.}
+\textit{Falsch. Bei der Belegung $0$, $0$ entsteht ein Widerspruch zur Aussage.}
 
-\begin{center}
-\begin{tikzpicture}[thick,
-    set/.style = {circle,
-        minimum size = 3cm,
-        fill=Dandelion}]
- 
-% Set F
-\node[set,label={135:$F$}] (F) at (0,0) {};
- 
-% Set G
-\node[set,label={45:$G$}] (G) at (1.8,0) {};
- 
-% Circles outline
-\draw (0,0) circle(1.5cm);
-\draw (1.8,0) circle(1.5cm);
- 
-\end{tikzpicture}
-\end{center}
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|c|c}
+$F(x)$ & $G(x)$ & $\overbrace{F(x) \land G(x)}^{H}$ & $H \Rightarrow G(x)$\\
+0 & 0 & 0 & 1\\
+\end{tabular}
+\end{table}\
 
 \begin{enumerate}[label={d)}, leftmargin=*]
 \item $(\forall x : F(x) \lor G(x)) \Rightarrow (\exists x : G(x))$
