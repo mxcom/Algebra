@@ -4,4 +4,12 @@ Zeigen Sie, dass für beliebige Mengen $M$, $N$ gilt:\\
 
 a) $M \bigtriangleup N = M \cup N \Leftrightarrow M \cap N = \emptyset$\\
 
+(I) Wir zeigen \textit{linke Seite} $\Rightarrow$ \textit{rechte Seite} durch einen Widerspruch\\
+
+Zuerst nehmen wir das Gegenteil an, also $M \bigtriangleup N \neq M \cup N \Rightarrow M \cap N \neq \emptyset$. Somit existiert ein $x \in M \cap N$, wodurch auch $x \in M \cup N$ gelten muss. Da laut Definition der Kontravalenz $(M \cup N) \setminus (M \cap N)$ gilt, ist $x \not \in M \bigtriangleup N$. Da $x \not \in M \bigtriangleup N$ ist, aber $x \in M \cup N$ ist, gilt $M \bigtriangleup N \neq M \cup N$. Dies ergibt einen Widerspruch zur unserer Grundannahme das $M \bigtriangleup N = M \cup N$ gilt.\\
+
+(II) Wir zeigen \textit{linke Seite} $\Leftarrow$ \textit{rechte Seite}\\
+
+Es gilt $M \cap N = \emptyset$. Somit ist $M \bigtriangleup N = (M \cup N) \setminus \emptyset \Leftrightarrow (M \cup N)$.\\
+
 b) $M \bigtriangleup N = \emptyset \Leftrightarrow M = N$

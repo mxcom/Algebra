@@ -4,23 +4,32 @@ Es seien $A, B, C, D$ Mengen. Man zeige:\\
 
 a) $(A \cap B) \times (C \cap D) = (A \times C) \cap (B \times D)$\\
 
-Das Kartesische Produkt ist definiert als: $A \times B := \{(a,b) \ | \ a \in A, b \in B\}$
+Das Kartesische Produkt ist definiert als: $A \times B := \{(a,b) \ | \ a \in A, b \in B\}$\\
+
+Wir zeigen \textit{linke Seite} $\Rightarrow$ \textit{rechte Seite}
 
 \begin{align*}
-(A \cap B) \times (C \cap D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
-x \in (A \cap B) \times y \in (C \cap D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
-(x \in A \cap x \in B) \times (y \in C \cap y \in D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
-(x \in A \cap x \in B) \land (y \in C \cap y \in D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
-(x \in A \land x \in B) \land (y \in C \land y \in D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
-x \in A \land x \in B \land y \in C \land y \in D &\Leftrightarrow (A \times C) \cap (B \times D)\\
-x \in A \land y \in C \land x \in B \land y \in D &\Leftrightarrow (A \times C) \cap (B \times D)\\
-x \in A \land y \in C \land x \in B \land y \in D &\Leftrightarrow (A \times C) \cap (B \times D)\\
-(x \in A \land y \in C) \land (x \in B \land y \in D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
-x,y \in (A \land C) \land x,y \in (B \land D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
-x,y \in (A \times C) \land x,y \in (B \times D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
-x,y \in (A \times C) \cap x,y \in (B \times D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
-(A \times C) \cap (B \times D) &\Leftrightarrow (A \times C) \cap (B \times D)\\
+(A \cap B) \times (C \cap D) &\Leftrightarrow x \in (A \cap B) \land y \in (C \cap D)\\
+&\Leftrightarrow (x \in A \land x \in B) \land (y \in C \land y \in D)\\
+&\Leftrightarrow x \in A \land x \in B \land y \in C \land y \in D\\
+&\Leftrightarrow x \in A \land y \in C \land x \in B \land y \in D\\
+&\Leftrightarrow (x \in A \land y \in C) \land (x \in B \land y \in D)\\
+&\Leftrightarrow x,y \in (A \times C) \land x,y \in (B \times D)\\
+&\Leftrightarrow (A \times C) \cap (B \times D)\\
 \end{align*}
+
+Wir zeigen \textit{linke Seite} $\Leftarrow$ \textit{rechte Seite}
+
+\begin{align*}
+(A \times C) \cap (B \times D) &\Leftrightarrow x,y \in (A \times C) \land x,y \in (B \times D)\\
+&\Leftrightarrow (x \in A \land y \in B) \land (x \in B \land y \in D)\\
+&\Leftrightarrow x \in A \land y \in B \land x \in B \land y \in D\\
+&\Leftrightarrow x \in A \land x \in B \land y \in C \land y \in D\\
+&\Leftrightarrow (x \in A \land x \in B) \land (y \in C \land y \in D)\\
+&\Leftrightarrow x \in (A \cap B) \land y \in (C \cap D)\\
+&\Leftrightarrow (A \cap B) \times (C \cap D)\\
+\end{align*}
+
 
 b) $(A \times C) \cup (B \times D) \subseteq (A \cup B) \times (C \cup D)$\\
 

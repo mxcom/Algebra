@@ -4,21 +4,34 @@ Es seien $M$, $N$, $K$ beliebige Mengen. Beweisen Sie folgende Aussagen:\\
 
 a) $(N \ \backslash \ M) \ \backslash \ K = N \ \backslash \ (M \cup K)$\\
 
+(I) Wir zeigen $\text{\textit{linke Seite}} \Rightarrow \text{\textit{rechte Seite}}$
 \begin{align*}
-(N \ \backslash \ M) \ \backslash \ K &= N \ \backslash \ (M \cup K)\\
-x \in ((N \land \lnot M) \land \lnot K) &\Leftrightarrow x \in (N \land \lnot (M \lor K))\\
-(x \in N \land \lnot (x \in M)) \land \lnot (x \in K) &\Leftrightarrow x \in N \land \lnot (x \in M \lor x \in K))\\
-x \in N \land (\lnot (x \in M) \land \lnot (x \in K)) &\Leftrightarrow x \in N \land \lnot (x \in M \lor x \in K))\\
-x \in N \land \lnot (x \in M \lor x \in K)) &\Leftrightarrow x \in N \land \lnot (x \in M \lor x \in K))\\
-x \in (N \land \lnot (M \lor K)) &\Leftrightarrow x \in (N \land \lnot (M \lor K))\\
-N \ \backslash \ (M \cup K) &= N \ \backslash \ (M \cup K)
+(N \ \backslash \ M) \ \backslash \ K &\Rightarrow x \in ((N \ \backslash M) \ \backslash \ K)\\
+&\Rightarrow (x \in N \land x \not \in M) \land x \not \in K\\
+&\Rightarrow x \in N \land x \not \in M \land x \not \in K\\
+&\Rightarrow x \in N \land (x \not \in M \land x \not \in K)\\
+&\Rightarrow x \in N \land x \not \in (M \lor K)\\
+&\Rightarrow x \in (N \ \backslash \ (M \cup K))\\
+&\Rightarrow (N \ \backslash \ (M \cup K)\\
 \end{align*}
+
+(II) Wir zeigen $\text{\textit{rechte Seite}} \Rightarrow \text{\textit{linke Seite}}$
+\begin{align*}
+N \ \backslash \ (M \cup K) &\Rightarrow x \in (N \ \backslash \ (M \cup K))\\
+&\Rightarrow x \in N \land x \not \in (M \lor K)\\
+&\Rightarrow x \in N \land (x \not \in M \land x \not \in K)\\
+&\Rightarrow x \in N \land x \not \in M \land x \not \in K\\
+&\Rightarrow (x \in N \land x \not \in M) \land x \not \in K\\
+&\Rightarrow x \in ((N \ \backslash M) \ \backslash \ K)\\
+&\Rightarrow (N \ \backslash \ M) \ \backslash \ K
+\end{align*}
+
 \begin{FlushRight}
 $\Box$
 \end{FlushRight}
 
 b) $N \ \backslash \ (N \ \backslash \ M) = M \Leftrightarrow M \subseteq N$\\
 
-Wenn wir zeigen können, dass $N \ \backslash \ (N \ \backslash \ M) = M$, auch als $N = M$ verstanden werden kann, dann stimmt $N = M \Leftrightarrow M \subseteq N$, da jede Teilmenge auch immer sich selbst als Teilmenge hat.
+c) $M \subseteq N \Leftrightarrow M \ \backslash \ N = \emptyset$
 
 \newpage
