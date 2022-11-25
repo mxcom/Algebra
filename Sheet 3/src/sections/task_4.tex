@@ -30,7 +30,42 @@ N \ \backslash \ (M \cup K) &\Rightarrow x \in (N \ \backslash \ (M \cup K))\\
 $\Box$
 \end{FlushRight}
 
-b) $N \ \backslash \ (N \ \backslash \ M) = M \Leftrightarrow M \subseteq N$\\
+\newpage
+
+b) $N \ \backslash \ (N \ \backslash \ M) = M \Leftrightarrow M \subseteq N$
+
+\begin{align*}
+\overbrace{N \ \backslash \ (N \ \backslash \ M) = M}^{\text{linke Seite}} \Leftrightarrow \overbrace{M \subseteq N}^{\text{rechte Seite}}
+\end{align*}
+
+(I) Rechte Seite
+\begin{align*}
+x \in M \Rightarrow x \in N\\
+\lnot(x \in M) \lor (x \in N)\\
+(x \not \in M) \lor (x \in N)
+\end{align*}
+
+(II) Linke Seite
+\begin{align*}
+x \in N \land x \not \in (x \in N \land x \not \in M) &= x \in M\\
+x \in N \land (x \not \in N \lor x \in M) &= x \in M\\
+(x \in N \land x \not \in N) \lor (x \in N \land x \in M) &= x \in M\\
+0 \lor (x \in N \land x \in M) &= x \in M\\
+x \in N \land x \in M &= x \in M
+\end{align*}
+
+(III) Linke Seite $\Leftrightarrow$ Rechte Seite
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.2\textwidth]{graphics/proof.png}
+\end{figure}
+
+\begin{align*}
+1. (\overbrace{0}^{N} \land \overbrace{1}^{M}) = 1 &\Leftrightarrow 0 = 0\\
+2. (\overbrace{1}^{N} \land \overbrace{1}^{M}) = 1 &\Leftrightarrow 1 = 1\\
+3. (\overbrace{1}^{N} \land \overbrace{1}^{M}) = 0 &\Leftrightarrow 1 = 1
+\end{align*}
 
 c) $M \subseteq N \Leftrightarrow M \ \backslash \ N = \emptyset$
 
