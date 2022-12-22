@@ -1,0 +1,65 @@
+\section*{Aufgabe 2}
+
+Gegeben sei die Menge $\mathbb{Z}_{10}$ zusammen mit der bekannten Multiplikation $\otimes$.\\
+
+a) Geben Sie eine Verknüpfungstafel an.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
+$\otimes$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\\
+\hline
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+1 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\\
+\hline
+2 & 0 & 2 & 4 & 6 & 8 & 0 & 2 & 4 & 6 & 8\\
+\hline
+3 & 0 & 3 & 6 & 9 & 2 & 5 & 8 & 1 & 4 & 7\\
+\hline
+4 & 0 & 4 & 8 & 2 & 6 & 0 & 4 & 8 & 2 & 6\\
+\hline
+5 & 0 & 5 & 0 & 5 & 0 & 5 & 0 & 5 & 0 & 5\\
+\hline
+6 & 0 & 6 & 2 & 8 & 4 & 0 & 6 & 2 & 8 & 4\\
+\hline
+7 & 0 & 7 & 4 & 1 & 8 & 5 & 2 & 9 & 6 & 3\\
+\hline
+8 & 0 & 8 & 6 & 4 & 2 & 0 & 8 & 6 & 4 & 2\\
+\hline
+9 & 0 & 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1\\
+\end{tabular}
+\end{table}\
+
+b) Bestimmen Sie alle bezüglich dieser Verknüfung invertierbaren Elemente $\mathbb{U}(\mathbb{Z}_{10}) \subseteq \mathbb{Z}_{10}$\\
+
+\textit{Das inverse Element verknüpft mit dem eigentlichen Element muss gleich dem neutralen Element sein.}\\
+
+$\mathbb{U}(\mathbb{Z}_{10}) = \{ 1, 3, 7, 9 \}$\\~\\
+
+c) Ist $\mathbb{U}(\mathbb{Z}_{10}) \subseteq \mathbb{Z}_{10}$ bezüglich $\otimes$ abgeschlossen?
+
+\textit{Es ist abgeschlossen, da jedes Element genau einmal in jeder Zeile und Spalte vorkommt (Sudoku).}\\
+
+d) Geben Sie eine Verknüpfungstafel für ($\mathbb{U}(\mathbb{Z}_{10})$, $\otimes$) an.\
+
+\hspace{0.55cm}Definiert diese Verknüpfung eine Gruppenstruktur?\
+
+\hspace{0.55cm}Zu welcher bekannten Gruppe ist (eventuell) diese Gruppe isomorph?\
+
+\hspace{0.55cm}Geben Sie ggf. einen Isomorphismus an.\
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c|c|c|c}
+$\otimes$ & 1 & 3 & 7 & 9\\
+\hline
+1 & 1 & 3 & 7 & 9\\
+\hline
+3 & 3 & 9 & 1 & 7\\
+\hline
+7 & 7 & 1 & 9 & 3\\
+\hline
+9 & 9 & 7 & 3 & 1
+\end{tabular}
+\end{table}
