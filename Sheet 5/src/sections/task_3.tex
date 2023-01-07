@@ -1,0 +1,124 @@
+\section*{Aufgabe 3}
+
+Wir betrachten die Symmetriegruppe ($\mathbb{S}_7$ , $\circ$) der Permutationen der 7 Elemente $\{1, 2, 3, 4,\\ 5, 6, 7\}$ mit der Abbildungskomposition als Verknüpfung.\\
+
+a) Berechnen Sie für die Elemente
+$\phi =
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+2 & 3 & 5 & 6 & 1 & 4 & 7\\
+\end{pmatrix}$ und
+$\psi = 
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+4 & 6 & 2 & 3 & 7 & 1 & 5\\
+\end{pmatrix}$\\~\\
+
+% phi^-1
+$\phi^{-1} =
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+5 & 1 & 2 & 6 & 3 & 4 & 7\\
+\end{pmatrix}$\\~\\~\\
+
+% phi^4
+$\phi^{4} = \phi^{2} \ \circ \ \phi^{2} =
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+3 & 5 & 1 & 4 & 2 & 6 & 7\\
+\end{pmatrix} \ \circ \
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+3 & 5 & 1 & 4 & 2 & 6 & 7\\
+\end{pmatrix} =
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+\end{pmatrix}$\\~\\~\\
+
+% psi^3
+$\psi^{3} = \psi^{2} \ \circ \ \psi^{1} = 
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+3 & 1 & 6 & 2 & 5 & 4 & 7\\
+\end{pmatrix} \ \circ \
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+4 & 6 & 2 & 3 & 7 & 1 & 5\\
+\end{pmatrix} =
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+2 & 4 & 1 & 6 & 7 & 3 & 5\\
+\end{pmatrix}$\\~\\~\\
+
+% phi o psi^3
+$\phi \ \circ \ \psi^{3} =
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+2 & 3 & 5 & 6 & 1 & 4 & 7\\
+\end{pmatrix} \ \circ \
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+2 & 4 & 1 & 6 & 7 & 3 & 5\\
+\end{pmatrix}
+= 
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+3 & 6 & 2 & 4 & 7 & 5 & 1\\
+\end{pmatrix}$\\
+
+\begin{align*}
+\psi^{2} \ \circ \ \phi \ \circ \ \psi^{-1} &=
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+3 & 5 & 1 & 4 & 2 & 6 & 7\\
+\end{pmatrix} \ \circ \
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+2 & 3 & 5 & 6 & 1 & 4 & 7\\
+\end{pmatrix} \ \circ \
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+6 & 3 & 4 & 1 & 7 & 2 & 5\\
+\end{pmatrix}\\~\\
+&=
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+3 & 5 & 1 & 4 & 2 & 6 & 7\\
+\end{pmatrix} \ \circ \
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+4 & 5 & 6 & 2 & 7 & 3 & 1\\
+\end{pmatrix}\\~\\
+&=
+\begin{pmatrix}
+1 & 2 & 3 & 4 & 5 & 6 & 7\\
+2 & 5 & 4 & 1 & 7 & 6 & 3\\
+\end{pmatrix}
+\end{align*}
+
+\newpage
+
+b) Bestimmen Sie die kleinste Zahl $k > 0$, sodass $\phi^{k}$ das neutrale Element der Gruppe ergibt.\\
+
+\textit{4 und 6 tauschen somit muss $k$ eine gerade Zahl sein. 1, 2, 3, 5 werden so aufeinander abgebildet, dass es 4 Verknüpfungen braucht damit jedes Element auf sich selbst abgebildet wird, somit ist $k = 4$}\\
+
+$1 \ \ \rightarrow \ \ 2 \ \ \rightarrow \ \ 3 \ \ \rightarrow \ \ 5 \ \ \rightarrow \ \ 1$\\
+$2 \ \ \rightarrow \ \ 3 \ \ \rightarrow \ \ 5 \ \ \rightarrow \ \ 1 \ \ \rightarrow \ \ 2$\\
+$3 \ \ \rightarrow \ \ 5 \ \ \rightarrow \ \ 1 \ \ \rightarrow \ \ 2 \ \ \rightarrow \ \ 3$\\
+$4 \ \ \rightarrow \ \ 6 \ \ \rightarrow \ \ 4 \ \ \rightarrow \ \ 6 \ \ \rightarrow \ \ 4$\\
+$5 \ \ \rightarrow \ \ 1 \ \ \rightarrow \ \ 2 \ \ \rightarrow \ \ 3 \ \ \rightarrow \ \ 5$\\
+$6 \ \ \rightarrow \ \ 4 \ \ \rightarrow \ \ 6 \ \ \rightarrow \ \ 4 \ \ \rightarrow \ \ 6$\\
+$\underbrace{7 \ \ \rightarrow \ \ 7}_{k = 1 \Leftrightarrow \phi} \ \ \rightarrow \underbrace{7}_{k = 2} \rightarrow \underbrace{7}_{k = 3} \rightarrow \underbrace{7}_{k = 4}$\\~\\
+
+c) Lösen Sie in $(\mathbb{S}_7, \circ)$ die folgende Gleichung für die Unbekannte $\xi:$
+$$
+\phi^2 \ \circ \ \psi \ \circ \ \xi \ \circ \ \phi^3 = \psi \ \circ \ \phi^2
+$$\\
+
+d) Zeigen Sie, dass die Menge $\mathbb{T} = \{\rho \in \mathbb{S}_7 \ | \ \rho(\{1, 2, 5\}) \subseteq \{1, 2, 5\}\} \subseteq \mathbb{S}_7$ eine Untergruppe ist.\\
+
+e) Geben Sie die von $\sigma = \begin{pmatrix}1 & 2 & 3 & 4 & 5 & 6 & 7\\2 & 4 & 5 & 3 & 1 & 7 & 6\\\end{pmatrix}$ erzeuge Untergruppe von $\mathbb{S}_7$ an.
+
+
+
