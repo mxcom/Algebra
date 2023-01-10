@@ -1,0 +1,33 @@
+\section*{Aufgabe 7}
+
+Es sei $(G, \star)$ eine Gruppe.\\
+
+a) Es sei $h \in G$ ein beliebiges (aber festes) Element. Zeigen Sie, dass die Abbildung $\phi_h : G \rightarrow G$, $\phi_h(g) = h \star g \star h^{-1}$ ein Gruppenhomomorphismus ist.\\
+
+\textit{Ein Homomorphismus ist definiert, dass für zwei Gruppen $(H, *)$ und $(I, \circ)$, mit der Abbildung $A: G \rightarrow H$ gelten muss: $\forall g, g' \in H: A(g * g') = A(g) \circ A(g')$.}\\
+
+\textit{Hier muss also gezeigt werden, dass es für die Gruppe $(G, \star)$, $\forall g, g' \in G: \phi_h(g \star g') = \phi_h(g) \star \phi_h(g') = (h \star g \star h^{-1}) \star (h \star g' \star h^{-1})$ gilt.}
+
+\begin{align*}
+\phi_h(g \star g') &= h \star (g \star g') \star h^{-1}\\
+&= h \star g \star g' \star h^{-1}
+\end{align*}\
+
+b) Es sei speziell $G = \mathbb{S}_3$ die Permutationsgruppe von drei Elementen $\{1,2,3\}$, es sei $h = \begin{pmatrix}1 & 2 & 3\\2 & 3 & 1\\\end{pmatrix}$. Man gebe den Homomorphismus $\phi_h$ in Form einer Tabelle an.\\~\\
+
+\textit{Aus $h = \begin{pmatrix}1 & 2 & 3\\2 & 3 & 1\\\end{pmatrix}$, lässt sich $h^{-1} = \begin{pmatrix}1 & 2 & 3\\3 & 1 & 2\\\end{pmatrix}$ ableiten. Anschließend muss man alle $g \in G$ in  $\phi_h$ einsetzen also, $\phi_h(g) = h \star g \star h^{-1} = \begin{pmatrix}1 & 2 & 3\\2 & 3 & 1\\\end{pmatrix} \star g \star \begin{pmatrix}1 & 2 & 3\\3 & 1 & 2\\\end{pmatrix}$.}\\~\\
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c}
+$g \in G$ & $\phi_h(g)$\\
+\hline
+$\begin{pmatrix}1 & 2 & 3\\1 & 2 & 3\\\end{pmatrix}$ & $\begin{pmatrix}1 & 2 & 3\\1 & 2 & 3\\\end{pmatrix}$\\~\\
+$\begin{pmatrix}1 & 2 & 3\\1 & 3 & 2\\\end{pmatrix}$ & $\begin{pmatrix}1 & 2 & 3\\3 & 2 & 1\\\end{pmatrix}$\\~\\
+$\begin{pmatrix}1 & 2 & 3\\2 & 1 & 3\\\end{pmatrix}$ & $\begin{pmatrix}1 & 2 & 3\\1 & 3 & 2\\\end{pmatrix}$\\~\\
+$\begin{pmatrix}1 & 2 & 3\\2 & 3 & 1\\\end{pmatrix}$ & $\begin{pmatrix}1 & 2 & 3\\2 & 3 & 1\\\end{pmatrix}$\\~\\
+$\begin{pmatrix}1 & 2 & 3\\3 & 1 & 2\\\end{pmatrix}$ & $\begin{pmatrix}1 & 2 & 3\\3 & 1 & 2\\\end{pmatrix}$\\~\\
+$\begin{pmatrix}1 & 2 & 3\\3 & 2 & 1\\\end{pmatrix}$ & $\begin{pmatrix}1 & 2 & 3\\2 & 1 & 3\\\end{pmatrix}$\\
+\end{tabular}
+\end{table}
+

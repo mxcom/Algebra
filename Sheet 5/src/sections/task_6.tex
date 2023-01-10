@@ -1,0 +1,34 @@
+\section*{Aufgabe 6}
+
+Es sei $K$ die Menge der Kongruenzabbildungen eines gleichseitigen Dreiecks. $K$ besteht aus den Drehungen um den Mittelpunkt (Schnittpunkt der Seitenhalbierenden) mit Winkel $0^{\circ}$, $60^{\circ}$, $120^{\circ}$, und den Spiegelungen $s1$ , $s2$, $s3$ an den Mittelsenkrechten. $K$ bildet zusammen mit der Abbildungskomposition $\circ$ eine Gruppe.\\
+
+a) Bei jeder der Abbildungen werden die Eckpunkte $A$, $B$, $C$ des Dreiecks permutiert, durch jede der Abbildungen ist also eine Permutation der Menge $\{A, B, C\}$ bestimmt, und jede Permutation der drei Eckpunkte entsteht auch durch eine dieser Kongruenzabbildungen. Man gebe in einer Tabelle zu jeder der Kongruenzabbildungen die entsprechende Permutation an.\\
+
+$d_1 = \begin{pmatrix}A & B & C\\A & B & C\end{pmatrix}$, $d_2 = \begin{pmatrix}A & B & C\\C & A & B\end{pmatrix}$, $d_3 = \begin{pmatrix}A & B & C\\B & C & A\end{pmatrix}$,\\~\\
+
+$s_1 = \begin{pmatrix}A & B & C\\A & C & B\end{pmatrix}$, $s_2 = \begin{pmatrix}A & B & C\\C & B & A\end{pmatrix}$, $s_3 = \begin{pmatrix}A & B & C\\B & A & C\end{pmatrix}$\\~\\
+
+b) Bestimmen Sie die Gruppentafel zu dieser Gruppe $(K, \circ)$.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c|cccccc}
+$\circ$ & $d_1$ & $d_2$ & $d_3$ & $s_1$ & $s_2$ & $s_3$\\
+\hline
+$d_1$ & $d_1$ & $d_2$ & $d_3$ & $s_1$ & $s_2$ & $s_3$\\
+$d_2$ & $d_2$ & $d_3$ & $d_1$ & $s_3$ & $s_1$ & $s_2$\\
+$d_3$ & $d_3$ & $d_1$ & $d_2$ & $s_2$ & $s_3$ & $s_1$\\
+$s_1$ & $s_1$ & $s_2$ & $s_3$ & $d_1$ & $d_2$ & $d_3$\\
+$s_2$ & $s_2$ & $s_3$ & $s_1$ & $d_3$ & $d_1$ & $d_2$\\
+$s_3$ & $s_3$ & $s_1$ & $s_2$ & $d_2$ & $d_3$ & $d_1$\\
+\end{tabular}
+\end{table}\
+
+c) Man überzeuge sich an einigen Beispielen, dass die Abbildungskomposition $\circ$ auf $K$ genau mit der Verknüpfung in der Permutationsgruppe $\mathbb{S}_{\{A,B,C\}}$ korrespondiert. Die Zordnung aus a) definiert also einen Gruppenisomorphismus von $(K, \circ)$ auf die Permutationsgruppe $(\mathbb{S}_{\{A,B,C\}}, \circ)$.\\
+
+\newpage
+
+
+
+
+
