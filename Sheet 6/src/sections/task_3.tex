@@ -1,0 +1,82 @@
+\section*{Aufgabe 3}
+
+Gegeben sei ein kommutativer Ring mit Einselement $(A, \oplus, \otimes)$.\\
+Auf $B = A \times A$ definieren wir zwei Verknüpfungen, die wir wieder mit $\oplus$ und $\otimes$ bezeichnen:\\
+$(a_1, a_2) \oplus (b_1, b_2) := (a_1 + b_1, a_2 + b_2)$\\
+$(a_1, a_2) \otimes (b_1, b_2) := (a_1 \ast b_1, a_2 \ast b_2)$
+
+\begin{itemize}[leftmargin=*, label={a)}]
+\item Zeigen Sie, dass $B$ mit diesen Verknüpfungen wieder ein kommutativer Ring mit Einselement
+ist.
+\end{itemize}
+
+\textit{Um zu zeigen, dass $B$ mit den gegebenen Verknüpfungen ein kommutativer Ring mit Einselement ist, muss man zeigen, dass $B$ die folgenden Eigenschaften erfüllt:}
+
+\begin{enumerate}[leftmargin=*]
+\item \textit{Assoziativität der Addition: $(a \oplus b) \oplus c = a \oplus (b \oplus c)$ für alle $a$, $b$, $c$ in $B$.}
+\item \textit{Kommutativität der Addition: $a \oplus b = b \oplus a$ für alle $a$, $b$ in $B$.}
+\item \textit{Existenz eines neutralen Elements bei der Addition: Es gibt ein Element $0$ in $B$, so dass $a \oplus 0 = a$ für alle $a$ in $B$.}
+\item \textit{Existenz eines inversen Elements bei der Addition: Für jedes $a$ in $B$ gibt es ein Element $a^{-1}$ in $B$, so dass $a \oplus (a^{-1}) = 0$.}
+\item \textit{Assoziativität der Multiplikation: $(a \otimes b) \otimes c = a \otimes (b \otimes c)$ für alle $a$, $b$, $c$ in $B$.}
+\item \textit{Kommutativität der Multiplikation: $a \otimes b = b \otimes a$ für alle $a$, $b$ in $B$.}
+\item \textit{Existenz eines neutralen Elements bei der Multiplikation: Es gibt ein Element $1$ in $B$, so dass $a \otimes 1 = a$ für alle $a$ in $B$.}
+\item \textit{Distributivität: $a \otimes (b \oplus c) = (a \otimes b) \oplus (a \otimes c)$ und $(b \oplus c) \otimes a = (b \otimes a) \oplus (c \otimes a)$ für alle $a$, $b$, $c$ in $B$.}
+\end{enumerate}
+
+\textit{Anhand der angegebenen Verknüpfungen sieht man, dass alle oben genannten Eigenschaften erfüllt sind.}
+
+\begin{itemize}[leftmargin=*]
+\item \textit{Die Assoziativität der Addition und Multiplikation erfüllt, da es sich um die gleiche Assoziativität wie in $A$ handelt.}
+\item \textit{Die Kommutativität der Addition und Multiplikation erfüllt, da es sich um die gleiche Kommutativität wie in $A$ handelt.}
+\item \textit{Der neutrale Element bei der Addition ist $(0,0)$ und bei der Multiplikation ist $(1,1)$}
+\item \textit{Für jedes $(a_1,a_2)$ gibt es ein inverses Element $(a_1^{-1}, a_2^{-1})$}
+\item \textit{Die Distributivität erfüllt, da es sich um die gleiche Distributivität wie in $A$ handelt.}
+\end{itemize}
+
+\newpage
+
+\begin{itemize}[leftmargin=*, label={b)}]
+\item Bestimmen Sie alle Einheiten von $B$.
+\end{itemize}
+
+\textit{Gesucht sind alle Elemente für die gilt: $(a_1,a_2) \otimes (b_1,b_2) = (1,1)$.}\\
+
+$Einheiten \ von \ B: (1,1)$\\
+
+\begin{itemize}[leftmargin=*, label={c)}]
+\item Bestimmen Sie alle Nullteiler von $B$.
+\end{itemize}
+
+\textit{Gesucht sind Elemente für die gilt $x,y \neq (0,0)$ mit $x \otimes y = (0,0)$.}\\
+
+$Nullteiler \ von \ B: (1,0), (0,1)$\\
+
+\begin{itemize}[leftmargin=*, label={d)}]
+\item Zeigen Sie, dass das Assoziativgesetz nicht gilt, wenn Sie statt dessen die Definition $(a_1, a_2) \oplus (b_1, b_2) := (a_1 + a_2, b_1 + b_2)$ verwendet hätten
+\end{itemize}
+
+\textit{Damit die Assioziativät der Addition gilt muss $\forall a,b,c \in B: (a \oplus b) \oplus c = a \oplus (b \oplus c)$ gelten. Man muss also drei $a,b,c \in B$ finden für die die Definition nicht gilt.}\\
+
+\textit{Sei $(1,2), (3,4), (5,6) \in B$ dann muss $((1,2) \oplus (3,4)) \oplus (5,6) = (1,2) \oplus ((3,4) \oplus (5,6))$.}\\
+
+(i)
+\begin{align*}
+((1,2) \oplus (3,4)) \oplus (5,6)&=\\
+((1 + 2, 3 + 4)) \oplus (5,6)&=\\
+(3, 7) \oplus (5,6)&=\\
+(3 + 7, 5 + 6)&=\\
+(10,11)
+\end{align*}
+
+(ii)
+\begin{align*}
+(1,2) \oplus ((3,4) \oplus (5,6))&=\\
+(1,2) \oplus ((3 + 4, 5 + 6))&=\\
+(1,2) \oplus (7, 11)&=\\
+(1+2, 7+11)&=\\
+(3, 18)
+\end{align*}
+
+\textit{$(10,11) \neq (3, 18)$ somit gilt die Definition der Assioziativität nicht für alle Elemente $a,b,c \in B$.}
+
+\newpage

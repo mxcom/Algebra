@@ -1,0 +1,125 @@
+\section*{Aufgabe 2}
+
+Gegeben sei eine Menge $K = \{0, 1, a, b\}$ mit vier Elementen. Auf $K$ seien zwei Verknüpfungen $+$ und $\ast$ gegeben durch folgende (unvollständige) Verknüpfungstafeln:
+
+\begin{table}[h]
+\begin{tabular}{|c||c|c|c|c|}
+\hline
++ & 0 & 1 & $a$ & $b$\\
+\hline\hline
+0 & 0 & 1 & $a$ & $b$\\
+\hline
+1 & & 0 & &\\
+\hline
+$a$ & & $b$ & & 1\\
+\hline
+$b$ & & & &\\
+\hline
+\end{tabular}\\\\
+
+\begin{tabular}{|c||c|c|c|c|}
+\hline
+* & 0 & 1 & $a$ & $b$\\
+\hline\hline
+0 & & & &\\
+\hline
+1 & & 1 & a &\\
+\hline
+$a$ & & & b & 1\\
+\hline
+$b$ & & b & &\\
+\hline
+\end{tabular}
+\end{table}
+\begin{itemize}[leftmargin=*, label={a)}]
+\item Kümmern Sie sich nicht um die Assoziativ- und Distributiv-Gesetze.\\
+Ergänzen Sie die Tabellen so, dass $K$ mit diesen Verknüpfungen ein Körper wird.
+\end{itemize}
+
+\begin{table}[h]
+\begin{tabular}{|c||c|c|c|c|}
+\hline
+ +  &  0  &  1  & $a$ & $b$\\
+\hline\hline
+ 0  &  0  &  1  & $a$ & $b$\\
+\hline
+ 1  &  1  &  0  & $b$ & $a$\\
+\hline
+$a$ & $a$ & $b$ &  0  &  1\\
+\hline
+$b$ & $b$ & $a$ &  1  &  0\\
+\hline
+\end{tabular}\\\\
+
+\begin{tabular}{|c||c|c|c|c|}
+\hline
+ *  & 0  &  1  & $a$ & $b$\\
+\hline\hline
+ 0  & 0 & 0 & 0 & 0\\
+\hline
+ 1  & 0 & 1 & $a$ & $b$\\
+\hline
+$a$ & 0 & $a$ & $b$ & 1\\
+\hline
+$b$ & 0 & $b$ & 1 & $a$\\
+\hline
+\end{tabular}
+\end{table}
+
+\newpage
+
+\begin{itemize}[leftmargin=*, label={b)}]
+\item Lösen Sie in diesem Körper die Gleichungssysteme:\\
+$b \ast x + 1 = a$\\
+$x - a = 1$
+\end{itemize}
+
+(i)
+\begin{align*}
+(b \ast x) + 1 &= a &&| + (-1)\\
+(b \ast x) + 1 + (-1) &= a + \underbrace{(-1)}_{1}\\
+(b \ast x) &= a + 1\\
+b \ast x &= b &&| b^{-1} \ast\\
+\cancel{b^{-1} \ast b} \ast x &= b \ast \underbrace{b^{-1}}_{a}\\
+x &= b \ast a\\
+x &= 1
+\end{align*}
+
+(ii)
+\begin{align*}
+x - a &= 1\\
+x + (-a) &= 1\\
+x + a &= 1 &&| + (-a)\\
+x + \cancel{a + (-a)} &= 1 + \underbrace{(-a)}_{a}\\
+x &= 1 + a\\
+x &= b
+\end{align*}
+
+\newpage
+
+\begin{itemize}[leftmargin=*, label={c)}]
+\item Lösen Sie in diesem Körper das Gleichungssystem mit zwei Unbekannten x und y:\\
+$b \ast x + y = 1$\\
+$x + b \ast y = 0$
+\end{itemize}
+
+(i)
+\begin{align*}
+b \ast x + y &= 1\\
+(b \ast x) + y &= 1 &&| (b * x)^{-1} +\\
+(b * x)^{-1} + (b \ast x) + y &= (b * x)^{-1} + 1\\
+\cancel{(b * x)^{-1} + (b \ast x)} + y &= (b * x)^{-1} + 1\\
+y &= (b * x)^{-1} + 1
+\end{align*}
+
+\textit{Die Gleichung geht auf für:}
+\begin{itemize}[leftmargin=*]
+\item $y = 1, x = 0$
+\item $y = b, x = 1$
+\item $y = 0, x = a$
+\item $y = a, x = b$
+\end{itemize}\
+
+(ii)
+
+\newpage

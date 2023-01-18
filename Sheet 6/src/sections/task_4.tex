@@ -1,0 +1,36 @@
+\section*{Aufgabe 4}
+
+Wir betrachten den Ring der Polynome $\mathbb{Q}[x]$ über dem Körper der rationalen Zahlen. Dieser Ring ist ein ``euklidischer Ring'' bezüglich der Grad-Funktion, d.h.:
+
+\begin{itemize}[label=""]
+\item Für je zwei Polynome $f, g \in \mathbb{Q}[x]$ mit $g \neq 0$ gibt es Polynome $p, r \in \mathbb{Q}[x]$ mit\\
+$f = p * g + r$, wobei gilt: $grad(r) < grad(g)$\\
+(Polynomdivision mit Rest)
+\end{itemize}
+
+Für die folgenden Polynome $f$, $g$ berechne man jeweils die zugehörigen $p$, $q$:
+
+\begin{itemize}[label={a)}, leftmargin=*]
+\item $f = 3x^4 - 2x^2 + x + 1, g = x + 2$
+\end{itemize}
+
+\polylongdiv[style=C]{3x^4-2x^2+x+1}{x+2}
+
+\begin{itemize}[leftmargin=*]
+\item $p = 3x^3 - 6x^2 + 10x - 19$
+\item $r = 39$
+\end{itemize}\
+
+
+\begin{itemize}[label={b)}, leftmargin=*]
+\item $f = x^5 - x^4 + x^3 - x^2 + x - 1, g = x^3 + x^2 + x + 1$
+\end{itemize}
+
+\polylongdiv[style=C]{x^5-x^4+x^3-x^2+x-1}{x^3+x^2+1}
+
+\begin{itemize}[leftmargin=*]
+\item $p = x^2 -2x + 3$
+\item $r = -5x^2 +3x -4$
+\end{itemize}\
+
+
