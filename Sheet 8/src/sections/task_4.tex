@@ -1,0 +1,51 @@
+\section*{Aufgabe 4}
+
+Gegeben sei das folgende lineare Gleichungssystem über $\mathbb{Q}$:\\
+
+\sysdelim..\systeme{
+x_1 + 2x_2 - x_3 + 4x_4 = 4,
+-x_1 + x_2 + 3x_3 - 2x_4 + 3x_5 = 5,
+-x_1 + 7x_2 + x_3 + 2x_4 + 9x_5 = 23,
+2x_1 + x_2 + 2x_3 + 6x_4 - 3x_5 = -1,
+9x_2 + 6x_4 + 9x_5 = 27 
+}
+
+\begin{itemize}[leftmargin=*, label={a)}]
+\item Bestimmen Sie eine Basis des Lösungsraumes des zugehörigen homogenen Systems.
+\end{itemize}
+
+$
+\begin{bmatrix}
+1 & 2 & -1 & 4 & 0 & | & 4\\
+-1 & 1 & 3 & -2 & 3 & | & 5\\
+-1 & 7 & 1 & 2 & 9 & | & 23\\
+2 & 1 & 2 & 6 & -3 & | & -1\\
+0 & 9 & 0 & 6 & 9 & | & 27
+\end{bmatrix}
+\xrightarrow{\substack{\text{II+I} \\ \text{III + I} \\ \text{IV - 2I}}}
+\begin{bmatrix}
+1 & 2 & -1 & 4 & 0 & | & 4\\
+0 & 3 & 2 & 2 & 3 & | & 9\\
+0 & 9 & 0 & 6 & 9 & | & 27\\
+0 & -3 & 4 & -2 & -3 & | & -9\\
+0 & 9 & 0 & 6 & 9 & | & 27
+\end{bmatrix}
+\xrightarrow{\substack{\text{III-3II} \\ \text{IV + II} \\ \text{V - 3II}}}\\~\\~\\
+\begin{bmatrix}
+1 & 2 & -1 & 4 & 0 & | & 4\\
+0 & 3 & 2 & 2 & 3 & | & 9\\
+0 & 0 & -6 & 0 & 0 & | & 0\\
+0 & 0 & 6 & 0 & 0 & | & 0\\
+0 & 0 & -6 & 0 & 0 & | & 0
+\end{bmatrix}
+\xrightarrow{\substack{\text{IV + III} \\ \text{V - III}}}
+\begin{bmatrix}
+1 & 2 & -1 & 4 & 0 & | & 4\\
+0 & 3 & 2 & 2 & 3 & | & 9\\
+0 & 0 & -6 & 0 & 0 & | & 0\\
+0 & 0 & 0 & 0 & 0 & | & 0\\
+0 & 0 & 0 & 0 & 0 & | & 0
+\end{bmatrix}
+$\\~\\
+
+\newpage

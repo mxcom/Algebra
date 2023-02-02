@@ -1,0 +1,114 @@
+\section*{Aufgabe 3}
+
+\begin{itemize}[leftmargin=*, label={a)}]
+\item Gegeben sei das folgende lineare Gleichungssystem über $\mathbb{R}$:
+\end{itemize}
+
+\begin{tabular}{ccccccccc}
+$2x_1$ & $-$ & $4x_2$ & $+$ & $3x_3$ & $-$ & $x_4$ & $=$ & $2$\\ 
+$x_1$ & $-$ & $2x_2$ & $-$ & $2x_3$ & $+$ & $3x_4$ & $=$ & $15$\\
+$3x_1$ & $-$ & $6x_2$ & $+$ & $8x_3$ & $+$ & $ax_4$ & $=$ & $c$
+\end{tabular}\\~\\
+
+Für welche Wahl von $a$ bzw. $c$ in $\mathbb{R}$ wird der Lösungsraum dieses Gleichungssystems 2-dimensional, für welche $a$, $c$ wird das Gleichungssystem unlösbar?\\
+
+$
+\begin{bmatrix}
+2 & -4 & 3 & -1 & | & 2\\
+1 & -2 & -2 & 3 & | & 15\\
+3 & -6 & 8 & a & | & c\\
+\end{bmatrix}
+\xrightarrow{\text{II - (0,5} \cdot \text{I)}}
+\begin{bmatrix}
+2 & -4 & 3 & -1 & | & 2\\
+0 & 0 & -3.5 & 3.5 & | & 14\\
+3 & -6 & 8 & a & | & c\\
+\end{bmatrix}
+\xrightarrow{\text{III - (1.5} \cdot \text{I)}}\\~\\~\\
+\begin{bmatrix}
+2 & -4 & 3 & -1 & | & 2\\
+0 & 0 & -3.5 & 3.5 & | & 14\\
+0 & 0 & 3.5 & a & | & c\\
+\end{bmatrix}
+\xrightarrow{\text{III - II}}
+\begin{bmatrix}
+2 & -4 & 3 & -1 & | & 2\\
+0 & 0 & -3.5 & 3.5 & | & 14\\
+0 & 0 & 0 & a-5 & | & c-11\\
+\end{bmatrix}
+$\\~\\
+
+Lösbar für $a = 6$ und $c = 11$
+
+\begin{itemize}[leftmargin=*, label={a)}]
+\item Gegeben sei das folgende lineare Gleichungssystem über $\mathbb{R}$:
+\end{itemize}
+
+\newpage
+
+\begin{itemize}[leftmargin=*, label={b)}]
+\item Gegeben sei das folgende lineare Gleichungssystem über $\mathbb{R}$:
+\end{itemize}
+
+\begin{tabular}{ccccccccccc}
+$x_1$ & $+$ & $x_2$ & $+$ & $x_3$ & $-$ & $x_4$ & $-$ & $x_5$ & $=$ & $1$\\
+$x_1$ & $-$ & $x_2$ & $+$ & $x_3$ & $+$ & $x_4$ & $+$ & $(a+2)x_5$ & $=$ & $a+3$\\
+$x_1$ & $+$ & $x_2$ & $-$ & $x_3$ & $-$ & $x_4$ & $-$ & $x_5$ & $=$ & $-1$\\
+$x_1$ & $+$ & $x_2$ & $+$ & $x_3$ & $+$ & $(a-2)x_4$ & $-$ & $x_5$ & $=$ & $2a - 1$\\
+$2x_1$ & $+$ & $x_2$ & & & $-$ & $x_4$ & $-$ & $a x_5$ & $=$ & $a + 1$\\
+\end{tabular}\\~\\
+
+
+\begin{scriptsize}
+$
+\begin{bmatrix}
+1 & 1 & 1 & -1 & -1 & | & 1\\
+1 & -1 & 1 & 1 & a+2 & | & a+3\\
+1 & 1 & -1 & -1 & -1 & | & -1\\
+1 & 1 & 1 & a-2 & -1 & | & 2a-1\\
+2 & 1 & 0 & -1 & -a & | & a+1
+\end{bmatrix}
+\xrightarrow{\substack{\text{II-I} \\ \text{III - I} \\ \text{IV - I} \\ \text{V - 2I}}}
+\begin{bmatrix}
+1 & 1 & 1 & -1 & -1 & | & 1\\
+0 & -2 & 0 & 2 & a+3 & | & a+2\\
+0 & 0 & -2 & 0 & 0 & | & -2\\
+0 & 0 & 0 & a-2 & 0 & | & 2a-2\\
+0 & -1 & -2 & 1 & -a+2 & | & a-1
+\end{bmatrix}
+\xrightarrow{\text{Vertauschen}}\\~\\~\\
+\begin{bmatrix}
+1 & 1 & 1 & -1 & -1 & | & 1\\
+0 & -1 & -2 & 1 & -a+2 & | & a-1\\
+0 & -2 & 0 & 2 & a+3 & | & a+2\\
+0 & 0 & -2 & 0 & 0 & | & -2\\
+0 & 0 & 0 & a-2 & 0 & | & 2a-2\\
+\end{bmatrix}
+\xrightarrow{\text{II - (2} \cdot \text{I)}}
+\begin{bmatrix}
+1 & 1 & 1 & -1 & -1 & | & 1\\
+0 & -1 & -2 & 1 & -a+2 & | & a-1\\
+0 & 0 & 4 & 0 & 3a-1 & | & -a+4\\
+0 & 0 & -2 & 0 & 0 & | & -2\\
+0 & 0 & 0 & a-2 & 0 & | & 2a-2\\
+\end{bmatrix}
+\xrightarrow{\text{Vertauschen}}\\~\\~\\
+\begin{bmatrix}
+1 & 1 & 1 & -1 & -1 & | & 1\\
+0 & -1 & -2 & 1 & -a+2 & | & a-1\\
+0 & 0 & -2 & 0 & 0 & | & -2\\
+0 & 0 & 0 & a-2 & 0 & | & 2a-2\\
+0 & 0 & 4 & 0 & 3a-1 & | & -a+4\\
+\end{bmatrix}
+\xrightarrow{\text{V - (2} \cdot \text{III)}}
+\begin{bmatrix}
+1 & 1 & 1 & -1 & -1 & | & 1\\
+0 & -1 & -2 & 1 & -a+2 & | & a-1\\
+0 & 0 & -2 & 0 & 0 & | & -2\\
+0 & 0 & 0 & a-2 & 0 & | & 2a-2\\
+0 & 0 & 0 & 0 & 3a-1 & | & 4a-10\\
+\end{bmatrix}
+$\\~\\
+\end{scriptsize}
+
+\newpage

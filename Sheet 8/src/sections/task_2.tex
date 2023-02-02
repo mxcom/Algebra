@@ -1,0 +1,90 @@
+\section*{Aufgabe 2}
+
+Es sei $V$ der Lösungsraum des folgenden linearen Gleichungssystems über $\mathbb{Q}$:\\
+
+\sysdelim..\systeme{
+2x_1 + 3x_2 + 4x_3 + 5x_4 = 0,
+2x_1 + 11x_2 + 15x_3 + 13x_4 = 0,
+4x_1 - 2	x_2 - 3x_3 + 2x_4 = 0,
+14x_1 + 5x_2 + 6x_3 + 19x_4 = 0
+}\\
+
+\begin{itemize}[leftmargin=*, label={a)}]
+\item Man bestimme die Dimension von $V$.
+\end{itemize}
+
+$
+\begin{bmatrix}
+2 & 3 & 4 & 5\\
+2 & 11 & 15 & 13\\
+4 & -2 & -3 & 2\\
+14 & 5 & 6 & 19\\
+\end{bmatrix}
+\xrightarrow{\text{II - I}}
+\begin{bmatrix}
+2 & 3 & 4 & 5\\
+0 & 8 & 11 & 8\\
+4 & -2 & -3 & 2\\
+14 & 5 & 6 & 19\\
+\end{bmatrix}
+\xrightarrow{\text{III - (2} \cdot \text{I)}}
+\begin{bmatrix}
+2 & 3 & 4 & 5\\
+0 & 8 & 11 & 8\\
+0 & -8 & -11 & -8\\
+14 & 5 & 6 & 19\\
+\end{bmatrix}
+\xrightarrow{\text{IV - (7} \cdot \text{I)}}\\~\\~\\
+\begin{bmatrix}
+2 & 3 & 4 & 5\\
+0 & 8 & 11 & 8\\
+0 & -8 & -11 & -8\\
+0 & -16 & -22 & -16\\
+\end{bmatrix}
+\xrightarrow{\text{III - (-I)}}
+\begin{bmatrix}
+2 & 3 & 4 & 5\\
+0 & 8 & 11 & 8\\
+0 & 0 & 0 & 0\\
+0 & -16 & -22 & -16\\
+\end{bmatrix}
+\xrightarrow{\text{IV - (-2} \cdot \text{II)}}
+\begin{bmatrix}
+2 & 3 & 4 & 5\\
+0 & 8 & 11 & 8\\
+0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0\\
+\end{bmatrix}
+$\\~\\
+
+Dimensionen: 2
+
+\begin{itemize}[leftmargin=*, label={b)}]
+\item Man zeige, dass $v = (1, 1, 0, -1)$ in $V$ liegt.
+\end{itemize}
+
+I.
+\begin{align*}
+(2 \cdot 1) + (3 \cdot 1) + (4 \cdot 0) + (5 \cdot -1) &= 0\\
+2 + 3 + 0 - 5 &= 0\\
+0 &= 0
+\end{align*}
+
+II.
+\begin{align*}
+(8 \cdot 1) + (11 \cdot 0) + (8 \cdot -1) &= 0\\
+8 + 0 - 8 &= 0\\
+0 &= 0
+\end{align*}
+
+\begin{itemize}[leftmargin=*, label={c)}]
+\item Man bestimme eine Basis von $V$.
+\end{itemize}
+
+Man muss ein $u = (x_1, x_2, x_3, x_4)$ suchen für dass das Gleichungssystem aufgeht
+
+$$
+u = (2, 2, 0, -2)
+$$
+
+\newpage
